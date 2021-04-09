@@ -1,0 +1,195 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --color-prim: #22254b;
+  --color-sec: #373b69;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: var(--color-prim);
+}
+
+.app__content__header {
+  background-color: var(--color-sec);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app__content__header--title {
+  color: #fff;
+}
+
+.app__content__header__form--input {
+  background-color: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.app__content__header__form--input::placeholder {
+  color: #7378c5;
+}
+
+.app__content__header__form--input:focus {
+  background-color: var(--color-prim);
+}
+
+.app__content__header__form--btn {
+  background-color: var(--color-prim);
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 0.5rem 1rem;
+  outline: none;
+}
+
+.app__content__main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.app__content__main__movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: var(--color-sec);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.app__content__main__movie__info {
+  color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.app__content__main__movie__info--title {
+  font-size: 1.5rem;
+}
+
+.app__content__main__movie__info--rating {
+  background-color: var(--color-prim);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.app__content__main__movie__info .green {
+  color: chartreuse;
+}
+
+.app__content__main__movie__info .orange {
+  color: chocolate;
+}
+
+.app__content__main__movie__info .red {
+  color: crimson;
+}
+
+.app__content__main__movie--img {
+  width: 100%;
+  min-height: 300px;
+}
+
+.app__content__main__movie__date--year {
+  position: absolute;
+  right: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.app__content__main__movie__genre--title {
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.app__content__main__movie__overview {
+  font-size: 1.5rem;
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.5s ease-in;
+}
+
+.app__content__main__movie:hover .app__content__main__movie__overview {
+  transform: translateY(0);
+}
+
+.app__content__main__movie:hover__info {
+  order: -1;
+}
+
+.app__content__links {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.app__content__links--link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 450px) {
+  .app__content__header {
+    justify-content: space-between;
+  }
+  .app__content__header--title {
+    font-size: 1rem;
+    max-width: 100px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 370px) {
+  .app__content__header--title {
+    font-size: 0.9rem;
+  }
+  .app__content__header__form--input {
+    max-width: 150px;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.8rem;
+  }
+  .app__content__header__form--btn {
+    margin-left: 3px;
+    padding: 0.3rem 0.7rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
