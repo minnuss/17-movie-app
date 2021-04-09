@@ -167,7 +167,7 @@ html {
   margin-bottom: 15px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
   .app__content__header {
     justify-content: space-between;
   }
@@ -175,6 +175,15 @@ html {
     font-size: 1rem;
     max-width: 100px;
     text-align: center;
+  }
+  .app__content__header__form--input {
+    max-width: 170px;
+    font-size: 1.5rem;
+    padding: 0.3rem 0.8rem;
+  }
+  .app__content__header__form--btn {
+    margin-left: 3px;
+    padding: 0.3rem 0.7rem;
   }
 }
 
@@ -186,10 +195,6 @@ html {
     max-width: 150px;
     font-size: 1.4rem;
     padding: 0.3rem 0.8rem;
-  }
-  .app__content__header__form--btn {
-    margin-left: 3px;
-    padding: 0.3rem 0.7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
