@@ -38,8 +38,6 @@ function forwardNumber(number = 0) {
     const mainBox = document.querySelector('.app__content__main');
     const movies = document.querySelectorAll('.app__content__main__movie');
 
-
-
     // Get initial movies
     async function getMovies(url) {
 
@@ -66,7 +64,7 @@ function forwardNumber(number = 0) {
 
     // submit form when button is clicked
     searchBtn.addEventListener('click', () => {
-        // e.preventDefault();
+        e.preventDefault();
         const searchTerm = search.value;
         if (searchTerm === "") {
             return;
@@ -77,10 +75,6 @@ function forwardNumber(number = 0) {
 
     // Put all the values from API to HTML
     function showMovies(movies) {
-
-        if (!movies) {
-            setTimeout(movies, 500);
-        }
 
         mainBox.innerHTML = '';
 
