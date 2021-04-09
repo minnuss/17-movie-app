@@ -106,7 +106,7 @@ function forwardNumber(number = 0) {
             const { title, poster_path, vote_average, overview, release_date, genre_ids } = movie;
 
             // replacing ID's of genres to names
-            let genreNames = genre_ids.map(num => Obj[num]);
+            let genreNames = genre_ids.map(num => Obj[num]).map(genre => ' ' + genre);
 
             // getting only the year
             let [year, month, day] = release_date.split('-');

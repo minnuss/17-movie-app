@@ -87,7 +87,8 @@ html {
           letter-spacing: 0.5px;
 
           &--title {
-            font-size: 1.5rem;
+            max-width: 240px;
+            font-size: 1.6rem;
           }
 
           &--rating {
@@ -95,7 +96,7 @@ html {
             padding: 0.25rem 0.5rem;
             border-radius: 3px;
             font-weight: 600;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
           }
 
           .green {
@@ -122,17 +123,20 @@ html {
             right: 10px;
             color: #fff;
             font-weight: 600;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
           }
         }
 
         &__genre {
           &--title {
+            max-width: 240px;
             color: #fff;
             position: absolute;
             left: 10px;
-            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-shadow: 0.5px 2px 3px rgba(0, 0, 0, 1);
           }
         }
 
